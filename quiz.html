@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - WW2</title>
+    <link rel="stylesheet" href="assets/css/quiz.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">WW2 Stories</div>
+            <ul class="menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="chronologie.html">Chronologie</a></li>
+                <li><a href="carte.html">Carte</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="quiz.html" class="active">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="quiz-container">
+            <h1>Quiz éducatif</h1>
+            <p class="progress">Question <span id="current-question">1</span> / <span id="total-questions">3</span></p>
+            <div class="question">
+                <p id="question-text">Quelle année marque le début de la Seconde Guerre mondiale ?</p>
+            </div>
+            <div class="answers">
+                <button class="answer" data-correct="false">1938</button>
+                <button class="answer" data-correct="true">1939</button>
+                <button class="answer" data-correct="false">1940</button>
+            </div>
+            <div class="feedback hidden" id="feedback"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - Les récits cachés de la WW2</p>
+    </footer>
+
+    <script src="assets/js/quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie - WW2</title>
+    <link rel="stylesheet" href="assets/css/galerie.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">WW2 Stories</div>
+            <ul class="menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="chronologie.html">Chronologie</a></li>
+                <li><a href="carte.html">Carte</a></li>
+                <li><a href="galerie.html" class="active">Galerie</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Galerie d'objets historiques</h1>
+        <p>Découvrez les artefacts emblématiques de la Seconde Guerre mondiale. Cliquez sur une image pour en savoir plus.</p>
+
+        <div class="gallery">
+            <figure data-title="Machine Enigma" data-description="Utilisée pour coder les messages allemands pendant la guerre." data-image="assets/img/galerie/enigma.jpg">
+                <img src="assets/img/galerie/enigma.jpg" alt="Machine Enigma">
+                <figcaption>Machine Enigma</figcaption>
+            </figure>
+            <figure data-title="Uniforme allié" data-description="Uniforme d’un soldat allié utilisé lors du débarquement en Normandie." data-image="assets/img/galerie/uniform.jpg">
+                <img src="assets/img/galerie/uniform.jpg" alt="Uniforme allié">
+                <figcaption>Uniforme allié</figcaption>
+            </figure>
+            <figure data-title="Affiche de propagande" data-description="Affiche utilisée pour encourager les civils à soutenir l'effort de guerre." data-image="assets/img/galerie/poster.jpg">
+                <img src="assets/img/galerie/poster.jpg" alt="Affiche de propagande">
+                <figcaption>Affiche de propagande</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - Les récits cachés de la WW2</p>
+    </footer>
+
+    <!-- Modale -->
+    <div id="modal" class="hidden">
+        <div class="modal-content">
+            <span id="modal-close">&times;</span>
+            <img id="modal-image" src="" alt="">
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <script src="assets/js/galerie.js"></script>
+</body>
+</html>

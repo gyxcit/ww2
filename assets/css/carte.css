@@ -1,0 +1,109 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+header ul li a:hover, .active {
+    background: #005f99;
+}
+
+main {
+    padding: 100px 20px;
+}
+
+.map-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#map {
+    height: 70vh;
+    border: 2px solid #005f99;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.legend {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.legend h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.legend ul {
+    list-style: none;
+    padding: 0;
+}
+
+.legend li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.legend .icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.legend .icon.red {
+    background: #ff4c4c;
+}
+
+.legend .icon.blue {
+    background: #4c6bff;
+}
+
+.legend .icon.green {
+    background: #4caf50;
+}

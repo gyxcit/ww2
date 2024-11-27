@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte Interactive - WW2</title>
+    <link rel="stylesheet" href="assets/css/carte.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">WW2 Stories</div>
+            <ul class="menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="chronologie.html">Chronologie</a></li>
+                <li><a href="carte.html" class="active">Carte</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="map-container">
+            <h1>Carte Interactive</h1>
+            <p>Explorez les lieux clés de la Seconde Guerre mondiale. Cliquez sur un marqueur pour en savoir plus.</p>
+            <div id="map"></div>
+            <div class="legend">
+                <h3>Légende :</h3>
+                <ul>
+                    <li><span class="icon red"></span> Batailles majeures</li>
+                    <li><span class="icon blue"></span> Résistance locale</li>
+                    <li><span class="icon green"></span> Capitulations</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - Les récits cachés de la WW2</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="assets/js/carte.js"></script>
+</body>
+</html>
