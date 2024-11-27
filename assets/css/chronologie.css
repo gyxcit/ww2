@@ -1,0 +1,22 @@
+.timeline {
+    max-width: 800px;
+    margin: 50px auto;
+    position: relative;
+    border-left: 3px solid #005f99;
+    padding-left: 20px;
+}
+
+.event {
+    margin: 20px 0;
+    position: relative;
+}
+
+.event .date {
+    background: #ff6b6b;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    position: absolute;
+    left: -90px;
+}
